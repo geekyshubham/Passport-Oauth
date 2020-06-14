@@ -3,16 +3,16 @@
 <%- include('partials/messages') -%>
     <div class="form-group">
       <label >Email address</label>
-      <input type="email" class="form-control" id="mail" name="mail" placeholder="Enter email">
+      <input type="email" class="form-control" id="mail" name="mail" placeholder="Enter email" value="<%= typeof mail != 'undefined' ? mail : '' %>"/>
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">
       <label >Name</label>
-      <input type="name" class="form-control" id="name" name="name" placeholder="Enter name">
+      <input type="name" class="form-control" id="name" name="name" placeholder="Enter name" value="<%= typeof name != 'undefined' ? name : '' %>"/>
     </div>
     <div class="form-group">
       <label >Password</label>
-      <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+      <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="<%= typeof password != 'undefined' ? password : '' %>"/>
     </div>
     <div class="form-group">
       <label>Confirm Password</label>
